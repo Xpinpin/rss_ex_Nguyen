@@ -22,8 +22,9 @@ foreach ($results as $row) {
     echo '<item>';
     echo '<id>' . $row['id'] . '</id>';
     echo '<authorId>' . $row['author_id'] . '</authorId>';
+    echo '<teaser>' . $row['teaser'] . '</teaser>';
     echo '<title>' . $row['title'] . '</title>';
-    echo '<description>' . $row['teaser'] . '</description>';
+    echo '<description>' . $row['body'] . '</description>';
     echo '<link>' . $url . $row['id'] . '</link>';
     echo '<guid>' . $url . $row['id'] . '</guid>';
     echo '<pubDate>' . $date . '</pubDate>';
